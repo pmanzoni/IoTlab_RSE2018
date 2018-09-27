@@ -4,8 +4,8 @@ Repository of the basic code to be used for the lab session on MQTT at the Kobe 
 
 
 ## Lab 1 - October 3, 2018
-- [Intro to MQTT](https://github.com/pmanzoni/pythonMQTT_062018/blob/master/introMQTT_v1.pdf)
-- [Lab 1: basic examples with MQTT](https://hackmd.io/s/SySWKp2AM)
+- [Intro to MQTT](https://poliformat.upv.es/x/hC2Wt1)
+- [Lab 1: basic examples with MQTT](https://hackmd.io/s/B1L0aA0PQ)
 
 ## Lab 2 - 
 - [Lab 2, part A: using a cloud-based IoT repository: Ubidots](https://hackmd.io/s/Hke4Ya3Az)
