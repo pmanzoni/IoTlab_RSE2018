@@ -9,7 +9,7 @@ Sesiones de laboratorio sobre IoT de la asignatura RSE del Master de Ingeniería
 ## Lab 2: 31 Octubre 2018
 - [PyCom devices basic HowTo](https://hackmd.io/s/HJhUcamxQ)
 - [Using a cloud-based IoT repository: Ubidots](https://hackmd.io/s/H1PGA0APQ)
-- [Intro to LoPy devices](https://github.com/pmanzoni/pythonMQTT_062018/blob/master/micropython.pdf)
+- [Intro to LoPy devices](https://github.com/pmanzoni/IoTlab_RSE2018/blob/master/docs/micropython.pdf)
 
 ## Lab 3: 7 Noviembre 2018
 
