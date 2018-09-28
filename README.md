@@ -10,8 +10,7 @@ Sesiones de laboratorio sobre IoT de la asignatura RSE del Master de Ingeniería
 - [PyCom devices basic HowTo](https://hackmd.io/s/HJhUcamxQ)
 - [Using a cloud-based IoT repository: Ubidots](https://hackmd.io/s/H1PGA0APQ)
 - [Intro to LoPy devices](https://github.com/pmanzoni/pythonMQTT_062018/blob/master/micropython.pdf)
-  * 
 
 ## Lab 3: 7 Noviembre 2018
 
-* Experimenting with MoRaWAN
+* Experimenting with LoRaWAN
