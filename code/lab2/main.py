@@ -51,4 +51,4 @@ while True:
 
     # publishing the data
     client.publish(topic_is, json.dumps(sensor_value))
-    time.sleep(1)
+    time.sleep(5)
