@@ -11,7 +11,7 @@ Sesiones de laboratorio sobre IoT de la asignatura RSE del Master de Ingeniería
 
 - [Intro: How to use the HW](https://hackmd.io/s/ryViLUj97)
 
-- [Lab 2: Using MQTT can be used to send data to a cloud based platform](https://hackmd.io/s/H1PGA0APQ)
+- [Lab 2: Using MQTT  to send data to a cloud based platform](https://hackmd.io/s/H1PGA0APQ)
 
 ## Lab 3: 7 Noviembre 2018
 
