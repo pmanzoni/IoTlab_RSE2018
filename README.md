@@ -9,7 +9,7 @@ Sesiones de laboratorio sobre IoT de la asignatura RSE del Master de Ingeniería
 ## Lab 2: 31 Octubre 2018
 * [Intro: Micropython and LoPy devices](https://github.com/pmanzoni/IoTlab_RSE2018/blob/master/docs/micropython.pdf)
 
-- [Intro: How to use the HW](https://hackmd.io/s/ryViLUj97)
+- [Homework: How to use the HW](https://hackmd.io/s/ryViLUj97)
 
 - [Lab 2: Using MQTT  to send data to a cloud based platform](https://hackmd.io/s/H1PGA0APQ)
 
