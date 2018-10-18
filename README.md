@@ -15,5 +15,8 @@ Sesiones de laboratorio sobre IoT de la asignatura RSE del Master de Ingeniería
 
 ## Lab 3: 7 Noviembre 2018
 
-* Experimenting with LoRaWAN
+* Intro: LoRaWAN technology
+
+* [Lab 3: Experimenting with LoRaWAN](https://hackmd.io/s/BkQVRRAvX)
+
 
