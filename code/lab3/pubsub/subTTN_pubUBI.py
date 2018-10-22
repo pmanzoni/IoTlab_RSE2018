@@ -12,8 +12,11 @@ TTN_TOPIC = "+/devices/+/up"
 UBIDOTS_BROKER = "things.ubidots.com"
 
 # SET HERE THE VALUES OF YOUR APP AND DEVICE
+# TTN_USERNAME is the Application ID
 TTN_USERNAME = "VOID"
+# TTN_PASSWORD is the Application Access Key, in the bottom part of the Overview section of the “Application” window.
 TTN_PASSWORD = "VOID"
+# The User DEFAULT TOKEN
 UBIDOTS_USERNAME =  "VOID"
 
 
@@ -32,18 +35,22 @@ def on_connect_ubi(client, userdata, flags, rc):
 
 def on_message_ttn(client, userdata, msg):
 
-    themsg = json.loads(str(msg.payload))
+    themsg = json.loads(msg.payload.decode("utf-8"))
+
     payload_raw = themsg["payload_raw"]
     payload_plain = base64.b64decode(payload_raw)
-
     vals = struct.unpack(">fff", payload_plain)
 
-    print("Vals: temp. {} hum. {} lux: {}".format(vals[0], vals[1], vals[2]))
+    gtw_id = themsg["metadata"]["gateways"][0]["gtw_id"]
+    rssi = themsg["metadata"]["gateways"][0]["rssi"]
+
+    print("%s, rssi=%d" % (gtw_id, rssi))
+    print("@%s >> temp=%.3f hum=%.3f lux=%.3f" % (time.strftime("%H:%M:%S"), vals[0], vals[1], vals[2]))
 
     # JSONining the values according to the Ubidots API indications 
     payload = {"temperature": vals[0], "humidity": vals[1], "luxx": vals[2]}
 
-    client_ubi.connect(UBIDOTS_BROKER, 1883, 60)
+#    client_ubi.connect(UBIDOTS_BROKER, 1883, 60)
     client_ubi.loop_start()
 
     client_ubi.publish("/v1.6/devices/pysense1", json.dumps(payload))
@@ -71,5 +78,6 @@ client_ubi.on_connect = on_connect_ubi
 client_ttn.on_message = on_message_ttn
 
 client_ttn.connect(TTN_BROKER, 1883, 60)
+client_ubi.connect(UBIDOTS_BROKER, 1883, 60)
 
 client_ttn.loop_forever()
